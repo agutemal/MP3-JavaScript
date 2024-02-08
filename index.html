@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMP3</title>
+</head>
+<body>
+  <div class="container">
+    <div class="player">
+      <div class="playerControls">
+        <div class="playerBtn playerBtnSmall">
+          <span class="material-symbols-outlined">arrow_back</span>
+        </div>
+        <h5 class="playerTitle">Paying Now</h5>
+        <div class="playerBtn playerBtnSmall">
+          <span class="material-symbols-outlined">density_medium</span>
+        </div>
+      </div>
+      <div class="playerAlbun">
+        <img src="img/imgAlbun.png" alt="" class="payerImg">
+      </div>
+      <h2 class="playerArtis">Christine D'Clario</h2>
+      <h3 class="playerSong">Danzando</h3>
+      
+      <input type="range" name="playerLevel" id="" value="20" min="0">
+      <div class="audioDuration">
+        <div class="start" id="timeStarSong"></div>
+        <div class="end">7:00</div>
+      </div>
+      <audio class="playerAudio" controls id="audio">
+        <source src="media/song.mp3" type="audio/mp3">
+      </audio>
+
+      <div class="playerControls">
+        <div class="playerBtn playerBtnMedium--medium">
+          <span class="material-symbols-outlined">skip_previous</span>
+        </div>
+        <div class="playerBtn playerBtnMedium--medium blue" id="play">
+          <span class="material-symbols-outlined playBtn">play_arrow</span>
+          <span class="material-symbols-outlined pauseBtn hide">pause</span>
+        </div>
+        <div class="playerBtn playerBtnMedium--medium">
+          <span class="material-symbols-outlined">skip_next</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="functionality.js"></script>
+</html>

@@ -1,0 +1,126 @@
+:root{
+  --background:#e0e5ec;
+  --gray: #797d7f;
+}
+img{
+  width:100%;
+  max-width:600px;
+}
+.container{
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.player{
+  height: 550px;
+  width: 300px;
+  background-color: var(--background); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+  -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+.playerControls{
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.playerBtn{
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  color: var(--gray);
+}
+.playerBtn:active{
+  box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+  inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+
+}
+.playerBtnSmall{
+  min-width: 50px;
+  min-height: 50px;
+}
+.playerTitle{
+  font-weight: 600;
+  font-size: 0.8em;
+  color: #a1a1a1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.playerAlbun{
+  width: 150px;
+}
+.payerImg{
+  box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
+  -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
+}
+.playerArtis{
+  font-size: 1.2em;
+  font-weight: 500;
+  opacity: 0.5;
+  margin: 20px 0px 0px 0px;
+}
+.playerSong{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  opacity: 0.5;
+  margin: 0;
+}
+.playerLevel{
+  width: 80%;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin-top: 40px;
+}
+.playerLevel::-webkit-slider-runnable-track{
+  background-color: #d7dbdd;
+  height: 6px;
+  border-radius: 3px;
+}
+.audioDuration{
+  margin-top: -30px;
+  display: flex;
+  width: 78%;
+  font-size: 10px;
+  font-weight: 600;
+  color: #a1a1a1;
+  letter-spacing: 1px;
+}
+.start {
+  flex: 1;
+}
+.playerAudio{
+  visibility: hidden;
+}
+.playerBtnMedium{
+  width: 70px;
+  width: 70px;
+}
+.playerBtnMedium--medium{
+  min-height: 70px;
+  min-width: 70px;
+}
+.blue{
+  background-color: #5c87fe;
+  color: #fff;
+}
+.hide {
+  display: none;
+}
